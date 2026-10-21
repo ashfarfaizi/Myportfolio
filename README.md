@@ -1,6 +1,6 @@
 # 🚀 Faizi Ashfar - Portfolio
 
-A stunning, modern portfolio website showcasing my skills as a Full Stack Developer & UI/UX Designer. Built with pure HTML, CSS, and JavaScript featuring a space-themed design with interactive animations.
+A classy, 3D portfolio for a software engineer working across full-stack, cloud and AI/ML. Built with plain HTML, CSS and JavaScript plus Three.js for the interactive 3D hero.
 
 ## 🌟 Live Demo
 
@@ -8,38 +8,21 @@ A stunning, modern portfolio website showcasing my skills as a Full Stack Develo
 
 ## ✨ Features
 
-### 🎨 Design & UI
-- **Space-themed design** with animated nebula and stars
-- **Custom cursor** with interactive hover effects
-- **Responsive design** that works on all devices
-- **Smooth animations** and transitions throughout
-- **Glassmorphism effects** with backdrop blur
-- **3D tilt effects** on project cards
+- **Interactive 3D hero** — an iridescent, noise-displaced sculpture with orbit rings and a particle field (Three.js + custom GLSL shaders) that reacts to the mouse and scroll
+- **3D skills sphere** that spins with the cursor
+- **3D tilt + glare** on project cards and the portrait
+- Editorial typography (Instrument Serif + Geist), film-grain texture, custom cursor, magnetic buttons
+- Scroll-reveal animations, animated counters, intro loader
+- **Contact form delivered straight to Gmail** (via FormSubmit) with a Gmail-compose fallback
+- Fully responsive, respects `prefers-reduced-motion`, graceful fallback when WebGL is unavailable
 
-### 🚀 Interactive Elements
-- **Parallax scrolling** effects
-- **Floating animations** for profile image
-- **Particle system** with floating elements
-- **Typewriter effect** for hero greeting
-- **Smooth scrolling** navigation
-- **Click ripple effects**
+## 📱 Sections
 
-### 📱 Sections
-- **Hero Section** - Introduction with animated text
-- **About Me** - Personal information with profile photo
-- **Projects** - Showcase of featured work with live demos
-- **Skills** - Technical skills organized by categories
-- **Experience** - Professional timeline
-- **Contact** - Contact form and information
+Hero · About · Selected Work · Skills · Experience (Invisible Technologies, KloudFarm, Google GDSC) · Contact
 
 ## 🛠️ Technologies Used
 
-- **HTML5** - Semantic markup
-- **CSS3** - Advanced styling with animations
-- **JavaScript (ES6+)** - Interactive functionality
-- **CSS Grid & Flexbox** - Modern layout techniques
-- **CSS Animations** - Keyframe animations
-- **Responsive Design** - Mobile-first approach
+HTML5 · CSS3 · JavaScript (ES modules) · Three.js r160 · GLSL
 
 ## 🎯 Projects Showcased
 
@@ -78,21 +61,29 @@ Simply visit the live demo link above to view the portfolio.
 ## 📁 Project Structure
 
 ```
-Portfolio/
-├── index.html              # Main portfolio file
-├── profile-photo.jpg.jpeg  # Profile image
-├── README.md              # This file
-└── .git/                  # Git repository
+Myportfolio/
+├── index.html            # Page markup
+├── css/
+│   └── style.css         # All styles
+├── js/
+│   ├── main.js           # UI: loader, cursor, nav, reveals, tilt, skills sphere, contact form
+│   └── scene.js          # Three.js 3D hero scene
+├── assets/
+│   └── profile-photo.jpg # Profile image
+├── README.md
+└── DEPLOYMENT.md
 ```
+
+## 📬 Contact form → Gmail
+
+The form posts to [FormSubmit](https://formsubmit.co), which forwards messages to **ashfar657@gmail.com**.
+The very first submission triggers a one-time **"Activate Form"** email from FormSubmit — open it in Gmail and click the link once; every message after that lands in your inbox.
+If delivery ever fails, the visitor is offered a pre-filled Gmail draft instead.
 
 ## 🎨 Customization
 
 ### Changing Profile Photo
-1. Replace `profile-photo.jpg.jpeg` with your own image
-2. Update the `src` attribute in `index.html` line ~976:
-   ```html
-   <img src="your-photo.jpg" alt="Your Name">
-   ```
+Replace `assets/profile-photo.jpg` with your own image (keep the same name).
 
 ### Updating Personal Information
 - **Name**: Update in multiple locations in `index.html`
@@ -101,7 +92,7 @@ Portfolio/
 - **Skills**: Update the skills categories and tags
 
 ### Styling Customization
-- **Colors**: Modify CSS custom properties in the `<style>` section
+- **Colors**: Modify the CSS custom properties at the top of `css/style.css`
 - **Animations**: Adjust keyframe animations for different effects
 - **Layout**: Modify grid and flexbox properties
 
@@ -140,7 +131,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Email**: ashfarfaizi9@gmail.com
+- **Email**: ashfar657@gmail.com
 - **Phone**: +91 9769968931
 - **Location**: Kerala, India
 - **Status**: Available for full-time opportunities
