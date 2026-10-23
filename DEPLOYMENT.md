@@ -63,7 +63,9 @@ Make sure your files are organized like this:
 ```
 Portfolio/
 ├── index.html              # Main file (must be named index.html)
-├── profile-photo.jpg.jpeg  # Your photo
+├── css/style.css           # Styles
+├── js/main.js, js/scene.js # Scripts (scene.js is the 3D hero)
+├── assets/profile-photo.jpg # Your photo
 ├── README.md              # Documentation
 └── DEPLOYMENT.md          # This file
 ```
@@ -88,7 +90,7 @@ Portfolio/
 ### Images Not Showing
 - Verify image file paths are correct
 - Check if image files are committed to GitHub
-- Use relative paths (e.g., `profile-photo.jpg.jpeg`)
+- Use relative paths (e.g., `assets/profile-photo.jpg`)
 
 ### Styling Issues
 - Clear browser cache
