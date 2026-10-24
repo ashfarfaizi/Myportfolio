@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Faizi Ashfar — Portfolio · UI interactions
+   Ashfar Faizi — Portfolio · UI interactions
    ========================================================================== */
 
 (() => {
@@ -258,7 +258,7 @@
        ---------------------------------------------------------------------- */
     if (isMobile) {
         document.querySelectorAll('.gmail-link').forEach((a) => {
-            a.href = `mailto:${EMAIL}?subject=${encodeURIComponent('Hello Faizi')}`;
+            a.href = `mailto:${EMAIL}?subject=${encodeURIComponent('Hello Ashfar')}`;
             a.removeAttribute('target');
         });
     }

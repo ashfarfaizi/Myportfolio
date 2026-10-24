@@ -1,4 +1,4 @@
-# 🚀 Faizi Ashfar - Portfolio
+# 🚀 Ashfar Faizi - Portfolio
 
 A classy, 3D portfolio for a software engineer working across full-stack, cloud and AI/ML. Built with plain HTML, CSS and JavaScript plus Three.js for the interactive 3D hero.
 
@@ -18,7 +18,7 @@ A classy, 3D portfolio for a software engineer working across full-stack, cloud 
 
 ## 📱 Sections
 
-Hero · About · Selected Work · Skills · Experience (Invisible Technologies, KloudFarm, Google GDSC) · Contact
+Hero · About · Selected Work · Skills · Experience (Invisible Technologies, KloudFarm, Google) · Contact
 
 ## 🛠️ Technologies Used
 
@@ -26,10 +26,11 @@ HTML5 · CSS3 · JavaScript (ES modules) · Three.js r160 · GLSL
 
 ## 🎯 Projects Showcased
 
-1. **AI Multi-Agent Orchestration** - React + Redux + OpenAI SDK
-2. **LibraryHub** - Java + MySQL + OOP
-3. **CineAI** - Next.js 14 + TypeScript + MongoDB
-4. **Google Flights Clone** - React 18 + Tailwind CSS
+1. **Low-Latency Matching Engine** - C++20 + lock-free queues + WebAssembly
+2. **AI Multi-Agent Orchestration** - React + Redux + OpenAI SDK
+3. **LibraryHub** - Java + MySQL + OOP
+4. **CineAI** - Next.js 14 + TypeScript + MongoDB
+5. **Google Flights Clone** - React 18 + Tailwind CSS
 
 ## 🚀 Quick Start
 

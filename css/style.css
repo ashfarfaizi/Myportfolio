@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Faizi Ashfar — Portfolio
+   Ashfar Faizi — Portfolio
    ========================================================================== */
 
 :root {
@@ -398,7 +398,32 @@ main, .footer, .nav { position: relative; z-index: 2; }
     transition: transform 0.6s var(--ease), border-color 0.4s, opacity 1s var(--ease);
 }
 .project:hover { border-color: var(--line-strong); }
-.project:nth-child(even) { margin-top: clamp(0rem, 6vw, 5rem); }
+.project:nth-child(odd):not(.project-featured) { margin-top: clamp(0rem, 6vw, 5rem); }
+
+/* Featured project: spans both columns, visual beside text */
+.project-featured { grid-column: 1 / -1; flex-direction: row; }
+.project-featured .project-visual { flex: 0 0 42%; height: auto; min-height: 340px; border-bottom: 0; border-right: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
+.project-featured .project-body { justify-content: center; }
+.project-featured h3 { font-size: clamp(1.6rem, 2.8vw, 2.2rem); }
+.v0 { background: radial-gradient(circle at 50% 50%, rgba(226, 196, 143, 0.10), transparent 70%), #0b0b12; }
+.ladder { position: relative; z-index: 1; width: min(78%, 320px); font-family: var(--mono); font-size: 0.78rem; display: flex; flex-direction: column; gap: 4px; transform: translateZ(40px); }
+.ladder-row { position: relative; display: flex; justify-content: space-between; padding: 0.38rem 0.7rem; border-radius: 6px; overflow: hidden; }
+.ladder-row i { position: absolute; top: 0; bottom: 0; right: 0; width: var(--w); opacity: 0.22; animation: ladderPulse 3.2s ease-in-out infinite; }
+.ladder-row:nth-child(2) i, .ladder-row:nth-child(6) i { animation-delay: 0.6s; }
+.ladder-row:nth-child(3) i, .ladder-row:nth-child(5) i { animation-delay: 1.2s; }
+.ladder-row span { position: relative; }
+.ladder-row.ask span:first-child { color: #ff9b9b; }
+.ladder-row.ask i { background: #ff7a7a; }
+.ladder-row.bid span:first-child { color: #6ee7a8; }
+.ladder-row.bid i { background: #4fd18f; }
+.ladder-row span:last-child { color: var(--muted); }
+.ladder-mid { display: flex; justify-content: space-between; align-items: baseline; padding: 0.7rem; margin: 4px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--faint); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.68rem; }
+.ladder-mid b { font-family: var(--serif); font-weight: 400; font-size: 1.9rem; letter-spacing: 0; text-transform: none; color: var(--accent); }
+@keyframes ladderPulse { 50% { transform: scaleX(0.82); transform-origin: right; } }
+.project-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.project-stats li { display: flex; flex-direction: column; gap: 0.15rem; }
+.project-stats b { font-family: var(--serif); font-weight: 400; font-size: clamp(1.5rem, 2.4vw, 2rem); line-height: 1; }
+.project-stats span { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
 
 .project-visual {
     position: relative;
@@ -673,7 +698,10 @@ main, .footer, .nav { position: relative; z-index: 2; }
     .about-grid, .contact-grid, .job { grid-template-columns: 1fr; }
     .portrait-wrap { max-width: 380px; }
     .projects { grid-template-columns: 1fr; }
-    .project:nth-child(even) { margin-top: 0; }
+    .project:nth-child(odd):not(.project-featured) { margin-top: 0; }
+    .project-featured { flex-direction: column; }
+    .project-featured .project-visual { flex: none; height: auto; min-height: 0; padding: 3.2rem 1rem 1.6rem; border-right: 0; border-bottom: 1px solid var(--line); }
+    .project-featured .ladder { width: min(88%, 320px); }
 }
 
 @media (max-width: 760px) {

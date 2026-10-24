@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Faizi Ashfar — Portfolio · 3D hero scene (Three.js)
+   Ashfar Faizi — Portfolio · 3D hero scene (Three.js)
    An iridescent, noise-displaced sculpture surrounded by orbit rings and a
    particle field. Reacts to the mouse and to scrolling.
    ========================================================================== */
