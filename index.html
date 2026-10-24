@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faizi Ashfar — Software Engineer · AI/ML</title>
-    <meta name="description" content="Faizi Ashfar — software engineer working across full-stack development, cloud and AI/ML.">
+    <title>Ashfar Faizi — Software Engineer · AI/ML</title>
+    <meta name="description" content="Ashfar Faizi — software engineer working across full-stack development, cloud and AI/ML.">
     <meta name="theme-color" content="#07070b">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
     <!-- Loader -->
     <div class="loader" id="loader" aria-hidden="true">
         <div class="loader-inner">
-            <span class="loader-name">Faizi Ashfar</span>
+            <span class="loader-name">Ashfar Faizi</span>
             <span class="loader-count" id="loader-count">0</span>
         </div>
         <div class="loader-bar"><span id="loader-bar"></span></div>
@@ -36,7 +36,7 @@
 
     <!-- Navigation -->
     <header class="nav" id="nav">
-        <a href="#home" class="nav-logo" aria-label="Home">FA<span>.</span></a>
+        <a href="#home" class="nav-logo" aria-label="Home">AF<span>.</span></a>
         <nav>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
@@ -59,8 +59,8 @@
                 <span class="status-dot"></span> Available for full-time roles
             </div>
             <h1 class="hero-title">
-                <span class="line"><span class="word">Faizi</span></span>
-                <span class="line"><span class="word italic">Ashfar</span></span>
+                <span class="line"><span class="word">Ashfar</span></span>
+                <span class="line"><span class="word italic">Faizi</span></span>
             </h1>
             <div class="hero-bottom">
                 <p class="hero-lede reveal">
@@ -95,7 +95,7 @@
             <div class="about-grid">
                 <div class="portrait-wrap reveal">
                     <div class="portrait tilt" data-tilt="8">
-                        <img src="assets/profile-photo.jpg" alt="Portrait of Faizi Ashfar" loading="lazy">
+                        <img src="assets/profile-photo.jpg" alt="Portrait of Ashfar Faizi" loading="lazy">
                         <div class="portrait-glare"></div>
                     </div>
                     <div class="portrait-caption">
@@ -119,7 +119,7 @@
                     </p>
                     <div class="stats reveal">
                         <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Companies</span></div>
-                        <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Featured builds</span></div>
+                        <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Featured builds</span></div>
                         <div class="stat"><span class="stat-num" data-count="2" data-suffix="+">0</span><span class="stat-label">Years building</span></div>
                     </div>
                 </div>
@@ -134,8 +134,43 @@
             </div>
 
             <div class="projects">
+                <article class="project project-featured tilt reveal" data-tilt="4">
+                    <div class="project-visual v0">
+                        <span class="project-num">01 — Featured</span>
+                        <div class="ladder" aria-hidden="true">
+                            <div class="ladder-row ask"><span>101.25</span><i style="--w:38%"></i><span>420</span></div>
+                            <div class="ladder-row ask"><span>101.20</span><i style="--w:62%"></i><span>780</span></div>
+                            <div class="ladder-row ask"><span>101.15</span><i style="--w:84%"></i><span>1,050</span></div>
+                            <div class="ladder-mid"><span>p50 add</span><b>43 ns</b></div>
+                            <div class="ladder-row bid"><span>101.10</span><i style="--w:90%"></i><span>1,120</span></div>
+                            <div class="ladder-row bid"><span>101.05</span><i style="--w:55%"></i><span>690</span></div>
+                            <div class="ladder-row bid"><span>101.00</span><i style="--w:30%"></i><span>360</span></div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <h3>Low-Latency Matching Engine</h3>
+                            <span class="project-year">Systems · C++20</span>
+                        </div>
+                        <p>A limit-order-book exchange core built for predictable low latency. Orders arrive over TCP in a binary
+                            protocol, pass through lock-free queues to a pinned matching thread, and stream back out as gapless UDP
+                            market data. Every command is journaled, and replays reproduce the live run exactly. The order book is
+                            also compiled to WebAssembly, so you can trade against the real engine in your browser.</p>
+                        <ul class="project-stats">
+                            <li><b>43 ns</b><span>p50 order add</span></li>
+                            <li><b>6–7.5M</b><span>ops / sec, one core</span></li>
+                            <li><b>~650 ns</b><span>gateway round trip</span></li>
+                        </ul>
+                        <ul class="tags"><li>C++20</li><li>Lock-free SPSC</li><li>epoll / TCP / UDP</li><li>WebAssembly</li><li>TSan · ASan</li></ul>
+                        <div class="project-links">
+                            <a href="https://low-latency-matching-engine.vercel.app" target="_blank" rel="noopener">Live demo <span>↗</span></a>
+                            <a href="https://github.com/ashfarfaizi/low-latency-matching-engine" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-glare"></div>
+                </article>
                 <article class="project tilt reveal" data-tilt="6">
-                    <div class="project-visual v1"><span class="project-num">01</span><div class="orb"></div></div>
+                    <div class="project-visual v1"><span class="project-num">02</span><div class="orb"></div></div>
                     <div class="project-body">
                         <div class="project-top">
                             <h3>AI Multi-Agent Orchestration</h3>
@@ -153,7 +188,7 @@
                 </article>
 
                 <article class="project tilt reveal" data-tilt="6">
-                    <div class="project-visual v2"><span class="project-num">02</span><div class="orb"></div></div>
+                    <div class="project-visual v2"><span class="project-num">03</span><div class="orb"></div></div>
                     <div class="project-body">
                         <div class="project-top">
                             <h3>CineAI</h3>
@@ -171,7 +206,7 @@
                 </article>
 
                 <article class="project tilt reveal" data-tilt="6">
-                    <div class="project-visual v3"><span class="project-num">03</span><div class="orb"></div></div>
+                    <div class="project-visual v3"><span class="project-num">04</span><div class="orb"></div></div>
                     <div class="project-body">
                         <div class="project-top">
                             <h3>LibraryHub</h3>
@@ -189,7 +224,7 @@
                 </article>
 
                 <article class="project tilt reveal" data-tilt="6">
-                    <div class="project-visual v4"><span class="project-num">04</span><div class="orb"></div></div>
+                    <div class="project-visual v4"><span class="project-num">05</span><div class="orb"></div></div>
                     <div class="project-body">
                         <div class="project-top">
                             <h3>Google Flights Clone</h3>
@@ -280,7 +315,7 @@
 
                 <article class="job reveal">
                     <div class="job-head">
-                        <h3 class="job-company">Google <span class="job-sub">(GDSC)</span></h3>
+                        <h3 class="job-company">Google</h3>
                         <span class="job-date">May 2023 — Aug 2023</span>
                     </div>
                     <ul class="job-points">
@@ -301,7 +336,7 @@
 
             <div class="contact-grid">
                 <div class="contact-info">
-                    <a class="contact-email gmail-link reveal" href="https://mail.google.com/mail/?view=cm&fs=1&to=ashfar657@gmail.com&su=Hello%20Faizi" target="_blank" rel="noopener">
+                    <a class="contact-email gmail-link reveal" href="https://mail.google.com/mail/?view=cm&fs=1&to=ashfar657@gmail.com&su=Hello%20Ashfar" target="_blank" rel="noopener">
                         ashfar657@gmail.com <span>↗</span>
                     </a>
                     <dl class="contact-list reveal">
@@ -339,13 +374,13 @@
     </main>
 
     <footer class="footer">
-        <a class="footer-big gmail-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=ashfar657@gmail.com&su=Hello%20Faizi" target="_blank" rel="noopener">
+        <a class="footer-big gmail-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=ashfar657@gmail.com&su=Hello%20Ashfar" target="_blank" rel="noopener">
             Say <em>hello</em> <span>↗</span>
         </a>
         <div class="footer-row">
-            <span>© <span id="year">2026</span> Faizi Ashfar</span>
+            <span>© <span id="year">2026</span> Ashfar Faizi</span>
             <div class="footer-links">
-                <a class="gmail-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=ashfar657@gmail.com&su=Hello%20Faizi" target="_blank" rel="noopener">Gmail</a>
+                <a class="gmail-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=ashfar657@gmail.com&su=Hello%20Ashfar" target="_blank" rel="noopener">Gmail</a>
                 <a href="https://github.com/ashfarfaizi" target="_blank" rel="noopener">GitHub</a>
                 <a href="#home">Back to top ↑</a>
             </div>
