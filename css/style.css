@@ -432,6 +432,8 @@ main, .footer, .nav { position: relative; z-index: 2; }
 .v2 .orb { background: radial-gradient(circle at 32% 28%, #fff 0%, #ffe6b8 12%, #e2a64f 42%, #3a2410 78%); box-shadow: 0 30px 80px -10px rgba(226, 166, 79, 0.5); }
 .v3 .orb { background: radial-gradient(circle at 32% 28%, #fff 0%, #c4fff6 12%, #3fb8aa 42%, #0b2e2a 78%); box-shadow: 0 30px 80px -10px rgba(63, 184, 170, 0.5); border-radius: 30%; animation-name: orbSpin; animation-duration: 18s; animation-timing-function: linear; }
 .v4 .orb { background: radial-gradient(circle at 32% 28%, #fff 0%, #ffd0e2 12%, #e2638f 42%, #3b0f20 78%); box-shadow: 0 30px 80px -10px rgba(226, 99, 143, 0.5); }
+.v5 .orb { background: radial-gradient(circle at 32% 28%, #fff 0%, #bfe3ff 12%, #3f86e2 42%, #0a1c3b 78%); box-shadow: 0 30px 80px -10px rgba(63, 134, 226, 0.5); }
+.v6 .orb { background: radial-gradient(circle at 32% 28%, #fff 0%, #c7ffdd 12%, #3fb86f 42%, #0b2e1c 78%); box-shadow: 0 30px 80px -10px rgba(63, 184, 111, 0.5); border-radius: 30%; animation-name: orbSpin; animation-duration: 20s; animation-timing-function: linear; }
 @keyframes orbSpin { to { rotate: 360deg; } }
 
 .project-num {

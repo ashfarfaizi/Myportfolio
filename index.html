@@ -133,9 +133,50 @@
                 <h2 class="section-title">Selected <em>work</em></h2>
             </div>
 
-            <div class="projects">
+                        <div class="projects">
                 <article class="project tilt reveal" data-tilt="6">
-                    <div class="project-visual v1"><span class="project-num">01</span><div class="orb"></div></div>
+                    <div class="project-visual v5"><span class="project-num">01</span><div class="orb"></div></div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <h3>Low-Latency Matching Engine</h3>
+                            <span class="project-year">Systems · C++20</span>
+                        </div>
+                        <p>A limit-order-book exchange core written from scratch in C++20: lock-free queues feed a
+                            matching thread pinned to its own core, with TCP order entry and gapless UDP market data.
+                            ~43 ns median order insert (6–7M ops/sec on one core), verified by a 200k-op differential
+                            fuzz test, ThreadSanitizer, and a journal + replay that reproduces 1.68M events to the same hash.
+                            The book is compiled to WebAssembly so you can trade against it in the browser.</p>
+                        <ul class="tags"><li>C++20</li><li>Lock-free</li><li>TCP / UDP</li><li>WebAssembly</li><li>Linux</li></ul>
+                        <div class="project-links">
+                            <a href="https://low-latency-matching-engine.vercel.app" target="_blank" rel="noopener">Live demo <span>↗</span></a>
+                            <a href="https://github.com/ashfarfaizi/low-latency-matching-engine" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-glare"></div>
+                </article>
+
+                <article class="project tilt reveal" data-tilt="6">
+                    <div class="project-visual v6"><span class="project-num">02</span><div class="orb"></div></div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <h3>ReviewerGap — AI Oversight Study</h3>
+                            <span class="project-year">AI Safety · Research</span>
+                        </div>
+                        <p>An empirical study of scalable oversight: when one model checks another's work, which errors
+                            does it catch, and do two reviewers miss the same ones? Problems are generated with their
+                            worked solutions, so the ground truth is known exactly — no human or model grading to trust.
+                            It plants one known error per solution, measures detection and localisation, and reports how
+                            correlated two reviewers' misses are: when that correlation is high, stacking reviewers buys
+                            less safety than it looks.</p>
+                        <ul class="tags"><li>AI Safety</li><li>Scalable Oversight</li><li>Python</li><li>LLM Evaluation</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/ashfarfaizi/reviewergap" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+                        </div>
+                    </div>
+                    <div class="project-glare"></div>
+                </article>
+                <article class="project tilt reveal" data-tilt="6">
+                    <div class="project-visual v1"><span class="project-num">03</span><div class="orb"></div></div>
                     <div class="project-body">
                         <div class="project-top">
                             <h3>AI Multi-Agent Orchestration</h3>
@@ -153,7 +194,7 @@
                 </article>
 
                 <article class="project tilt reveal" data-tilt="6">
-                    <div class="project-visual v2"><span class="project-num">02</span><div class="orb"></div></div>
+                    <div class="project-visual v2"><span class="project-num">04</span><div class="orb"></div></div>
                     <div class="project-body">
                         <div class="project-top">
                             <h3>CineAI</h3>
@@ -171,7 +212,7 @@
                 </article>
 
                 <article class="project tilt reveal" data-tilt="6">
-                    <div class="project-visual v3"><span class="project-num">03</span><div class="orb"></div></div>
+                    <div class="project-visual v3"><span class="project-num">05</span><div class="orb"></div></div>
                     <div class="project-body">
                         <div class="project-top">
                             <h3>LibraryHub</h3>
@@ -189,7 +230,7 @@
                 </article>
 
                 <article class="project tilt reveal" data-tilt="6">
-                    <div class="project-visual v4"><span class="project-num">04</span><div class="orb"></div></div>
+                    <div class="project-visual v4"><span class="project-num">06</span><div class="orb"></div></div>
                     <div class="project-body">
                         <div class="project-top">
                             <h3>Google Flights Clone</h3>
