@@ -367,11 +367,11 @@ main, .footer, .nav { position: relative; z-index: 2; }
 }
 .portrait img {
     width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
-    filter: grayscale(1) contrast(1.05) brightness(0.92);
+    filter: none;
     transform: scale(1.06);
-    transition: filter 0.8s var(--ease), transform 0.8s var(--ease);
+    transition: transform 0.8s var(--ease);
 }
-.portrait:hover img { filter: grayscale(0) contrast(1) brightness(1); transform: scale(1.02); }
+.portrait:hover img { transform: scale(1.02); }
 .portrait-glare, .project-glare {
     position: absolute; inset: 0; pointer-events: none;
     background: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%), rgba(255, 255, 255, 0.22), transparent 55%);
