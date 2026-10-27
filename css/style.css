@@ -297,7 +297,8 @@ main, .footer, .nav { position: relative; z-index: 2; }
     width: max-content;
     font-family: var(--serif); font-size: clamp(1.6rem, 3.2vw, 2.6rem);
     white-space: nowrap;
-    animation: marquee 40s linear infinite;
+    animation: marquee 45s linear infinite;
+    will-change: transform;
 }
 /* separators rendered as small rolling gradient balls */
 .marquee-track b {
@@ -310,9 +311,10 @@ main, .footer, .nav { position: relative; z-index: 2; }
     animation: ballRoll 2.6s linear infinite;
     flex: none;
 }
-.marquee:hover .marquee-track { animation-play-state: paused; }
-.marquee:hover .marquee-track b { animation-play-state: paused; }
-@keyframes marquee { to { transform: translateX(-50%); } }
+@keyframes marquee {
+    from { transform: translateX(-50%); }
+    to   { transform: translateX(0); }
+}
 @keyframes ballRoll {
     to { transform: rotate(360deg); }
 }
