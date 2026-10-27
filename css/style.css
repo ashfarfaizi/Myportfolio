@@ -299,9 +299,26 @@ main, .footer, .nav { position: relative; z-index: 2; }
     white-space: nowrap;
     animation: marquee 40s linear infinite;
 }
-.marquee-track b { color: var(--accent); font-size: 0.5em; font-weight: 400; }
+/* separators rendered as small rolling gradient balls */
+.marquee-track b {
+    font-size: 0; /* hide the glyph, keep the element */
+    display: inline-block;
+    width: clamp(0.7rem, 1.3vw, 1rem); height: clamp(0.7rem, 1.3vw, 1rem);
+    border-radius: 50%;
+    background: radial-gradient(circle at 32% 28%, #fff 0%, #ffe6b8 14%, var(--accent) 48%, #3a2410 85%);
+    box-shadow: 0 6px 18px -4px rgba(226, 166, 79, 0.55), inset -2px -3px 6px rgba(0,0,0,0.35);
+    animation: ballRoll 2.6s linear infinite;
+    flex: none;
+}
 .marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee:hover .marquee-track b { animation-play-state: paused; }
 @keyframes marquee { to { transform: translateX(-50%); } }
+@keyframes ballRoll {
+    to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track, .marquee-track b { animation: none; }
+}
 
 /* --------------------------------------------------------------------------
    Sections (shared)
