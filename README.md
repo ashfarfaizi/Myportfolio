@@ -1,4 +1,4 @@
-# 🚀 Faizi Ashfar - Portfolio
+# 🚀 Ashfar Faizi - Portfolio
 
 A classy, 3D portfolio for a software engineer working across full-stack, cloud and AI/ML. Built with plain HTML, CSS and JavaScript plus Three.js for the interactive 3D hero.
 
